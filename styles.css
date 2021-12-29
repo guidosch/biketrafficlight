@@ -1,0 +1,88 @@
+.css-ampel {
+    width: 30px;
+    height: 90px;
+    border-radius: 6px;
+    position: relative;
+    background-color: black;
+    zoom: 1.7;
+    float: left;
+    margin-right: 10px
+}
+
+.css-ampel span,
+.css-ampel:before,
+.css-ampel:after {
+    content: "";
+    color: white;
+    position: absolute;
+    border-radius: 15px;
+    width: 22px;
+    height: 22px;
+    left: 4px;
+}
+
+.css-ampel:before {
+    top: 6px;
+    background-color: red;
+    background-color: dimgrey;
+}
+
+.css-ampel:after {
+    top: 34px;
+    background-color: yellow;
+    background-color: dimgrey;
+}
+
+.css-ampel span {
+    top: 62px;
+    background-color: green;
+    background-color: dimgrey;
+}
+
+.ampelrot:before {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+.ampelgelb:after {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+.ampelgruen span {
+    background-color: limegreen;
+    box-shadow: 0 0 20px limegreen;
+}
+
+/***
+tooltip css
+**/
+
+.hover {
+    color: red;
+}
+
+.tooltip {
+    top: -15px;
+    color: white;
+    opacity: 0;
+    /*
+    position: absolute;
+    */
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.tooltip>img {
+    max-width: 300px;
+    height: auto;
+}
+
+.hover:hover .tooltip {
+    opacity: 1;
+    display: block;
+}

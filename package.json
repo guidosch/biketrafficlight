@@ -1,0 +1,22 @@
+{
+  "name": "trailtrafficlight",
+  "version": "1.0.0",
+  "description": "Update traffic light based on trailfork status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trafficlight",
+    "bike",
+    "hoeckler"
+  ],
+  "author": "Guido Schnider",
+  "license": "ISC",
+  "dependencies": {
+    "rss-parser": "^3.12.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
